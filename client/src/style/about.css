@@ -1,0 +1,142 @@
+.about-page {
+	display: grid;
+	gap: 2rem;
+}
+
+.about-intro,
+.about-choose-us,
+.about-provide,
+.about-work {
+	border: 1px solid rgba(15, 23, 42, 0.08);
+	border-radius: 20px;
+	background: #ffffff;
+	padding: 2rem;
+	box-shadow: 0 12px 30px rgba(15, 23, 42, 0.06);
+}
+
+.about-intro {
+	background:
+		radial-gradient(circle at top left, rgba(34, 197, 94, 0.15), transparent 36%),
+		linear-gradient(135deg, #f8fafc 0%, #effdf6 100%);
+}
+
+.about-tag {
+	margin: 0 0 0.75rem;
+	display: inline-block;
+	font-size: 0.78rem;
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: #047857;
+	background: rgba(16, 185, 129, 0.14);
+	padding: 0.35rem 0.75rem;
+	border-radius: 999px;
+}
+
+.about-intro h1 {
+	margin: 0;
+	font-size: clamp(1.8rem, 3vw, 2.5rem);
+	line-height: 1.2;
+	color: #0f172a;
+}
+
+.about-intro p:last-child {
+	margin: 1rem 0 0;
+	line-height: 1.75;
+	color: #334155;
+	max-width: 70ch;
+}
+
+.about-choose-us h2,
+.about-provide h2,
+.about-work h2 {
+	margin: 0;
+	font-size: 1.65rem;
+	color: #0f172a;
+}
+
+.about-grid {
+	margin-top: 1.2rem;
+	display: grid;
+	gap: 1rem;
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.about-card {
+	border: 1px solid #d1fae5;
+	border-radius: 14px;
+	background: #f8fffb;
+	padding: 1.1rem;
+}
+
+.about-card h3 {
+	margin: 0;
+	color: #065f46;
+}
+
+.about-card p {
+	margin: 0.65rem 0 0;
+	color: #475569;
+	line-height: 1.6;
+}
+
+.about-provide ul {
+	margin: 1rem 0 0;
+	padding-left: 1.15rem;
+	display: grid;
+	gap: 0.6rem;
+	color: #334155;
+	line-height: 1.6;
+}
+
+.work-steps {
+	margin-top: 1.15rem;
+	display: grid;
+	gap: 1rem;
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.step-card {
+	border: 1px solid #dbeafe;
+	border-radius: 14px;
+	background: #f8fbff;
+	padding: 1rem;
+}
+
+.step-card span {
+	display: inline-block;
+	margin-bottom: 0.55rem;
+	font-size: 0.82rem;
+	font-weight: 700;
+	color: #1d4ed8;
+	background: rgba(59, 130, 246, 0.15);
+	padding: 0.2rem 0.55rem;
+	border-radius: 999px;
+}
+
+.step-card h3 {
+	margin: 0;
+	color: #1e3a8a;
+}
+
+.step-card p {
+	margin: 0.55rem 0 0;
+	color: #475569;
+	line-height: 1.6;
+}
+
+@media (max-width: 680px) {
+	.about-intro,
+	.about-choose-us,
+	.about-provide,
+	.about-work {
+		padding: 1.4rem;
+		border-radius: 16px;
+	}
+
+	.about-choose-us h2,
+	.about-provide h2,
+	.about-work h2 {
+		font-size: 1.4rem;
+	}
+}
