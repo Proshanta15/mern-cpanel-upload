@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 import { useAuth } from "../store/auth.jsx";
 import "../style/login.css";
 
-const URL = "http://pro.ecogreentex.eu.com/api/auth/login";
+const URL = "http://localhost:5000/api/auth/login";
 export default function Login() {
   const [user, setUser] = useState({
     email: "",
