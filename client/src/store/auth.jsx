@@ -29,7 +29,7 @@ export const AuthProvider = ({ children }) => {
 
   const userAuthentication = async () => {
     try {
-      const response = await fetch("http://localhost:5000/api/auth/user", {
+      const response = await fetch("/api/auth/user", {
         method: "GET",
         headers: {
           Authorization: authorizationToken,
@@ -50,7 +50,7 @@ export const AuthProvider = ({ children }) => {
   // To fetch the server data on page load and set the user state
   const getServices = async () => {
     try {
-      const response = await fetch("http://localhost:5000/api/data/service", {
+      const response = await fetch("/api/data/service", {
         method: "GET"
       });
       if (response.ok) {
